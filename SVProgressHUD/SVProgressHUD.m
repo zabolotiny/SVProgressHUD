@@ -941,8 +941,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
                 
                 // Update accessibility
                 UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
-                UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, self.statusLabel.text);
-                
+
                 // Dismiss automatically if a duration was passed as userInfo. We start a timer
                 // which then will call dismiss after the predefined duration
                 if(duration){
